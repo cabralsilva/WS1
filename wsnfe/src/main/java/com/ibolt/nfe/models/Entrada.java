@@ -55,9 +55,9 @@ public class Entrada {
 	@XmlElement
 	private String finalidadeEmissaoTexto;
 	@XmlElement
-	private Long identificacaoDestinoOperacao;
+	private Long identificadorDestinoOperacao;
 	@XmlElement
-	private String identificacaoDestinoOperacaoTexto;
+	private String identificadorDestinoOperacaoTexto;
 	@XmlElement
 	private Long identificadorOperacaoConsumidorFinal;
 	@XmlElement

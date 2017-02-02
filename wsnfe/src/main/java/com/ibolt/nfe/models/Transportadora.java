@@ -42,7 +42,7 @@ public class Transportadora {
 	@XmlElement
 	private String telefone;
 	@XmlElement
-	private String pessoa;
+	private String tipoPessoa;
 	@XmlElement
 	private String tipo;
 	@XmlElement
@@ -193,11 +193,11 @@ public class Transportadora {
 	}
 
 	public String getPessoa() {
-		return this.pessoa;
+		return this.tipoPessoa;
 	}
 
 	public void setPessoa(String pessoa) {
-		this.pessoa = pessoa;
+		this.tipoPessoa = pessoa;
 	}
 
 	public String getTipo() {

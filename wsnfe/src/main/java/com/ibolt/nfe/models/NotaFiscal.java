@@ -31,9 +31,9 @@ public class NotaFiscal {
 	@XmlElement
 	private String finalidadeEmissaoTexto;
 	@XmlElement
-	private Long identificacaoDestinoOperacao;
+	private Long identificadorDestinoOperacao;
 	@XmlElement
-	private String identificacaoDestinoOperacaoTexto;
+	private String identificadorDestinoOperacaoTexto;
 	@XmlElement
 	private Long identificadorOperacaoConsumidorFinal;
 	@XmlElement
@@ -164,19 +164,19 @@ public class NotaFiscal {
 	}
 
 	public Long getIdentificacaoDestinoOperacao() {
-		return this.identificacaoDestinoOperacao;
+		return this.identificadorDestinoOperacao;
 	}
 
 	public void setIdentificacaoDestinoOperacao(Long identificacaoDestinoOperacao) {
-		this.identificacaoDestinoOperacao = identificacaoDestinoOperacao;
+		this.identificadorDestinoOperacao = identificacaoDestinoOperacao;
 	}
 
 	public String getIdentificacaoDestinoOperacaoTexto() {
-		return this.identificacaoDestinoOperacaoTexto;
+		return this.identificadorDestinoOperacaoTexto;
 	}
 
 	public void setIdentificacaoDestinoOperacaoTexto(String identificacaoDestinoOperacaoTexto) {
-		this.identificacaoDestinoOperacaoTexto = identificacaoDestinoOperacaoTexto;
+		this.identificadorDestinoOperacaoTexto = identificacaoDestinoOperacaoTexto;
 	}
 
 	public Long getIdentificadorOperacaoConsumidorFinal() {
@@ -416,8 +416,8 @@ public class NotaFiscal {
 				+ this.dataFaturamento + ", dataNotaFiscal=" + this.dataNotaFiscal + ", numeroNotaFiscal="
 				+ this.numeroNotaFiscal + ", naturezaOperacao=" + this.naturezaOperacao + ", finalidadeEmissao="
 				+ this.finalidadeEmissao + ", finalidadeEmissaoTexto=" + this.finalidadeEmissaoTexto
-				+ ", identificacaoDestinoOperacao=" + this.identificacaoDestinoOperacao
-				+ ", identificacaoDestinoOperacaoTexto=" + this.identificacaoDestinoOperacaoTexto
+				+ ", identificacaoDestinoOperacao=" + this.identificadorDestinoOperacao
+				+ ", identificacaoDestinoOperacaoTexto=" + this.identificadorDestinoOperacaoTexto
 				+ ", identificadorOperacaoConsumidorFinal=" + this.identificadorOperacaoConsumidorFinal
 				+ ", identificadorOperacaoConsumidorFinalTexto=" + this.identificadorOperacaoConsumidorFinalTexto
 				+ ", identificadorPresencaConsumidorFinal=" + this.identificadorPresencaConsumidorFinal
