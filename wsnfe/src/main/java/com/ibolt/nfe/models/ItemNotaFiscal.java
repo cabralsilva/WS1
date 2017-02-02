@@ -19,17 +19,17 @@ public class ItemNotaFiscal {
 	@XmlElement
 	private Double valorTotal;
 	@XmlElement
-	private Double aliquotaCofins;
+	private Double aliqCofins;
 	@XmlElement
-	private Double aliquotaIcms;
+	private Double aliqIcms;
 	@XmlElement
-	private Double aliquotaIcmsSt;
+	private Double aliqIcmsSt;
 	@XmlElement
-	private Double aliquotaIpi;
+	private Double aliqIpi;
 	@XmlElement
-	private Double aliquotaPis;
+	private Double aliqPis;
 	@XmlElement
-	private Double aliquotaIcmsInternoUfDestino;
+	private Double aliqIcmsInternoUfDestino;
 	@XmlElement
 	private Long cfop;
 	@XmlElement
@@ -118,51 +118,51 @@ public class ItemNotaFiscal {
 	}
 
 	public Double getAliquotaCofins() {
-		return this.aliquotaCofins;
+		return this.aliqCofins;
 	}
 
 	public void setAliquotaCofins(Double aliquotaCofins) {
-		this.aliquotaCofins = aliquotaCofins;
+		this.aliqCofins = aliquotaCofins;
 	}
 
 	public Double getAliquotaIcms() {
-		return this.aliquotaIcms;
+		return this.aliqIcms;
 	}
 
 	public void setAliquotaIcms(Double aliquotaIcms) {
-		this.aliquotaIcms = aliquotaIcms;
+		this.aliqIcms = aliquotaIcms;
 	}
 
 	public Double getAliquotaIcmsSt() {
-		return this.aliquotaIcmsSt;
+		return this.aliqIcmsSt;
 	}
 
 	public void setAliquotaIcmsSt(Double aliquotaIcmsSt) {
-		this.aliquotaIcmsSt = aliquotaIcmsSt;
+		this.aliqIcmsSt = aliquotaIcmsSt;
 	}
 
 	public Double getAliquotaIpi() {
-		return this.aliquotaIpi;
+		return this.aliqIpi;
 	}
 
 	public void setAliquotaIpi(Double aliquotaIpi) {
-		this.aliquotaIpi = aliquotaIpi;
+		this.aliqIpi = aliquotaIpi;
 	}
 
 	public Double getAliquotaPis() {
-		return this.aliquotaPis;
+		return this.aliqPis;
 	}
 
 	public void setAliquotaPis(Double aliquotaPis) {
-		this.aliquotaPis = aliquotaPis;
+		this.aliqPis = aliquotaPis;
 	}
 
 	public Double getAliquotaIcmsInternoUfDestino() {
-		return this.aliquotaIcmsInternoUfDestino;
+		return this.aliqIcmsInternoUfDestino;
 	}
 
 	public void setAliquotaIcmsInternoUfDestino(Double aliquotaIcmsInternoUfDestino) {
-		this.aliquotaIcmsInternoUfDestino = aliquotaIcmsInternoUfDestino;
+		this.aliqIcmsInternoUfDestino = aliquotaIcmsInternoUfDestino;
 	}
 
 	public Long getCfop() {
