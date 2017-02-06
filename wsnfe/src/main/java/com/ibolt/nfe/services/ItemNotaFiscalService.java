@@ -8,6 +8,7 @@ import com.ibolt.nfe.models.RetornoWS;
 import com.ibolt.nfe.services.ControlService;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,10 +123,14 @@ public class ItemNotaFiscalService extends ControlService {
 			inf.setAliquotaIpi(Double.valueOf(rs.getDouble("AliqIpi")));
 			inf.setAliquotaPis(Double.valueOf(rs.getDouble("AliqPis")));
 			inf.setCfop(Long.valueOf(rs.getLong("Cfop")));
-			inf.setCstCofins(Long.valueOf(rs.getLong("CstCofins")));
-			inf.setCstCsosn(Long.valueOf(rs.getLong("CstCsosn")));
-			inf.setCstIpi(Long.valueOf(rs.getLong("CstIpi")));
-			inf.setCstPis(Long.valueOf(rs.getLong("CstPis")));
+			
+			DecimalFormat df2 = new DecimalFormat("00");
+			DecimalFormat df3 = new DecimalFormat("000");
+			inf.setCstCofins(df2.format(Long.valueOf(rs.getLong("CstCofins"))));
+			inf.setCstCsosn(df3.format(Long.valueOf(rs.getLong("CstCsosn"))));
+			inf.setCstIpi(df2.format(Long.valueOf(rs.getLong("CstIpi"))));
+			inf.setCstPis(df2.format(Long.valueOf(rs.getLong("CstPis"))));
+			
 			inf.setModalidadeIcms(rs.getString("ModalidadeIcms"));
 			inf.setModalidadeIcmsSt(rs.getString("ModalidadeIcmsSt"));
 			inf.setOrigemTributaria(rs.getString("OrigemTributaria"));

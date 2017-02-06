@@ -28,6 +28,8 @@ public class ConnectFilemaker {
 	public ConnectFilemaker(String host, String base, String user, String pwd) throws Exception {
 		Class.forName("com.filemaker.jdbc.Driver").newInstance();
 		this.con = DriverManager.getConnection("jdbc:filemaker://" + host + "/" + base, user, pwd);
+//		this.con = DriverManager.getConnection("jdbc:filemaker://" + base, user, pwd);
+//		http://ibolthostplander.com.br/
 		SQLWarning warning = null;
 		warning = this.con.getWarnings();
 		while (warning != null) {

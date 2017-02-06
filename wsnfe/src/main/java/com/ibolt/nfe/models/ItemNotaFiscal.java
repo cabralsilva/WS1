@@ -33,13 +33,13 @@ public class ItemNotaFiscal {
 	@XmlElement
 	private Long cfop;
 	@XmlElement
-	private Long cstCofins;
+	private String cstCofins;
 	@XmlElement
-	private Long cstCsosn;
+	private String cstCsosn;
 	@XmlElement
-	private Long cstIpi;
+	private String cstIpi;
 	@XmlElement
-	private Long cstPis;
+	private String cstPis;
 	@XmlElement
 	private String modalidadeIcms;
 	@XmlElement
@@ -173,35 +173,35 @@ public class ItemNotaFiscal {
 		this.cfop = cfop;
 	}
 
-	public Long getCstCofins() {
+	public String getCstCofins() {
 		return this.cstCofins;
 	}
 
-	public void setCstCofins(Long cstCofins) {
+	public void setCstCofins(String cstCofins) {
 		this.cstCofins = cstCofins;
 	}
 
-	public Long getCstCsosn() {
+	public String getCstCsosn() {
 		return this.cstCsosn;
 	}
 
-	public void setCstCsosn(Long cstCsosn) {
+	public void setCstCsosn(String cstCsosn) {
 		this.cstCsosn = cstCsosn;
 	}
 
-	public Long getCstIpi() {
+	public String getCstIpi() {
 		return this.cstIpi;
 	}
 
-	public void setCstIpi(Long cstIpi) {
+	public void setCstIpi(String cstIpi) {
 		this.cstIpi = cstIpi;
 	}
 
-	public Long getCstPis() {
+	public String getCstPis() {
 		return this.cstPis;
 	}
 
-	public void setCstPis(Long cstPis) {
+	public void setCstPis(String cstPis) {
 		this.cstPis = cstPis;
 	}
 
