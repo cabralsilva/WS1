@@ -45,4 +45,11 @@ public class BDFM {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
+
+	@Override
+	public String toString() {
+		return "BDFM [host=" + host + ", base=" + base + ", user=" + user + ", pwd=" + pwd + "]";
+	}
+	
+	
 }

@@ -1,6 +1,9 @@
 package com.ibolt.nfe.services;
 
 import com.ibolt.util.ConnectFilemaker;
+
+import java.net.ConnectException;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ControlService {

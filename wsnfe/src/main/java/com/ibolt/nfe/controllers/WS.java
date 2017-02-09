@@ -27,16 +27,17 @@ public class WS {
         ItemNotaFiscalService infs = new ItemNotaFiscalService();
         RetornoWS<NotaFiscal> retorno = null;
         try {
-        	System.out.println("teste");
             nfs.CreateConnection(nf.getAcessoSistemas().getHost(), nf.getAcessoSistemas().getBase(), nf.getAcessoSistemas().getUser(), nf.getAcessoSistemas().getPwd());
             nf.setAcessoSistemas(null);
         }
         catch (Exception e) {
             System.out.println("Erro ao criar conexão com banco: " + e.getMessage());
+            e.printStackTrace();
             retorno = new RetornoWS<NotaFiscal>();
             retorno.setCodStatus(Long.valueOf(4));
             retorno.setMsg("WSNFE -> Falha ao criar conexão com banco");
             retorno.setModel(null);
+            return Response.ok((Object)retorno).build();
         }
         try {
             retorno = nfs.buscarFaturamento(nf);
@@ -52,6 +53,7 @@ public class WS {
             retorno.setCodStatus(Long.valueOf(5));
             retorno.setMsg("Falha ao buscar dados no banco " + e.getMessage());
             retorno.setModel(null);
+            return Response.ok((Object)retorno).build();
         }
         try {
             nfs.CloseConnection();
@@ -62,6 +64,7 @@ public class WS {
             retorno.setCodStatus(Long.valueOf(4));
             retorno.setMsg("WSNFE -> Falha ao fechar conexão com o banco");
             retorno.setModel(null);
+            return Response.ok((Object)retorno).build();
         }
         return Response.ok((Object)retorno).build();
     }
