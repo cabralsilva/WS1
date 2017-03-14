@@ -305,4 +305,19 @@ public class Cliente {
 	public void setIdentificadorInscricaoEstadual(String identificadorInscricaoEstadual) {
 		this.identificadorInscricaoEstadual = identificadorInscricaoEstadual;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [codigo=" + codigo + ", email=" + email + ", nome=" + nome + ", razaoSocial=" + razaoSocial
+				+ ", cpf=" + cpf + ", cnpj=" + cnpj + ", inscricaoEstadual=" + inscricaoEstadual + ", rg=" + rg
+				+ ", contato=" + contato + ", ddd=" + ddd + ", telefone=" + telefone + ", logradouro=" + logradouro
+				+ ", numero=" + numero + ", complemento=" + complemento + ", bairro=" + bairro + ", municipio="
+				+ municipio + ", municipioCodigo=" + municipioCodigo + ", uf=" + uf + ", ufCodigo=" + ufCodigo
+				+ ", cep=" + cep + ", pais=" + pais + ", paisCodigo=" + paisCodigo + ", site=" + site + ", observacao="
+				+ observacao + ", sexo=" + sexo + ", identificacaoEndereco=" + identificacaoEndereco + ", tipoPessoa="
+				+ tipoPessoa + ", informacoesReferencia=" + informacoesReferencia + ", idEstrangeiro=" + idEstrangeiro
+				+ ", identificadorInscricaoEstadual=" + identificadorInscricaoEstadual + "]";
+	}
+	
+	
 }

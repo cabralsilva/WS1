@@ -411,28 +411,27 @@ public class NotaFiscal {
 		this.dataSaida = dataSaida;
 	}
 
+	@Override
 	public String toString() {
-		return "NotaFiscal [codigo=" + this.codigo + ", tipoNotaFiscal=" + this.tipoNotaFiscal + ", dataFaturamento="
-				+ this.dataFaturamento + ", dataNotaFiscal=" + this.dataNotaFiscal + ", numeroNotaFiscal="
-				+ this.numeroNotaFiscal + ", naturezaOperacao=" + this.naturezaOperacao + ", finalidadeEmissao="
-				+ this.finalidadeEmissao + ", finalidadeEmissaoTexto=" + this.finalidadeEmissaoTexto
-				+ ", identificacaoDestinoOperacao=" + this.identificadorDestinoOperacao
-				+ ", identificacaoDestinoOperacaoTexto=" + this.identificadorDestinoOperacaoTexto
-				+ ", identificadorOperacaoConsumidorFinal=" + this.identificadorOperacaoConsumidorFinal
-				+ ", identificadorOperacaoConsumidorFinalTexto=" + this.identificadorOperacaoConsumidorFinalTexto
-				+ ", identificadorPresencaConsumidorFinal=" + this.identificadorPresencaConsumidorFinal
-				+ ", identificadorPresencaConsumidorFinalTexto=" + this.identificadorPresencaConsumidorFinalTexto
-				+ ", observacao=" + this.observacao + ", unificado=" + this.unificado + ", flagProdutoGrade="
-				+ this.flagProdutoGrade + ", tipoMovimentacao=" + this.tipoMovimentacao + ", numeroDocumentoImportacao="
-				+ this.numeroDocumentoImportacao + ", fkCliente=" + this.fkCliente + ", fkTransportadora="
-				+ (Object) this.fkTransportadora + ", acessoSistemas=" + this.acessoSistemas + ", valorFrete="
-				+ this.valorFrete + ", valorSeguro=" + this.valorSeguro + ", valorOutros=" + this.valorOutros
-				+ ", valorDesconto=" + this.valorDesconto + ", valorProduto=" + this.valorProduto + ", lstItens="
-				+ this.lstItens + ", cpf=" + this.cpf + ", dataRegistroDI=" + this.dataRegistroDI
-				+ ", localDesembaraco=" + this.localDesembaraco + ", dataDesembaraco=" + this.dataDesembaraco
-				+ ", ufDesembaraco=" + this.ufDesembaraco + ", valorAfrmm=" + this.valorAfrmm
-				+ ", viaTransporteInternacional=" + this.viaTransporteInternacional + ", formaImportacaoIntermediacao="
-				+ this.formaImportacaoIntermediacao + ", cnpjAdquirente=" + this.cnpjAdquirente + ", ufTerceiro="
-				+ this.ufTerceiro + "]";
+		return "NotaFiscal [codigo=" + codigo + ", tipoNotaFiscal=" + tipoNotaFiscal + ", dataFaturamento="
+				+ dataFaturamento + ", dataEntrada=" + dataEntrada + ", dataSaida=" + dataSaida + ", dataNotaFiscal="
+				+ dataNotaFiscal + ", numeroNotaFiscal=" + numeroNotaFiscal + ", naturezaOperacao=" + naturezaOperacao
+				+ ", finalidadeEmissao=" + finalidadeEmissao + ", finalidadeEmissaoTexto=" + finalidadeEmissaoTexto
+				+ ", identificadorDestinoOperacao=" + identificadorDestinoOperacao
+				+ ", identificadorDestinoOperacaoTexto=" + identificadorDestinoOperacaoTexto
+				+ ", identificadorOperacaoConsumidorFinal=" + identificadorOperacaoConsumidorFinal
+				+ ", identificadorOperacaoConsumidorFinalTexto=" + identificadorOperacaoConsumidorFinalTexto
+				+ ", identificadorPresencaConsumidorFinal=" + identificadorPresencaConsumidorFinal
+				+ ", identificadorPresencaConsumidorFinalTexto=" + identificadorPresencaConsumidorFinalTexto
+				+ ", observacao=" + observacao + ", unificado=" + unificado + ", flagProdutoGrade=" + flagProdutoGrade
+				+ ", tipoMovimentacao=" + tipoMovimentacao + ", numeroDocumentoImportacao=" + numeroDocumentoImportacao
+				+ ", fkCliente=" + fkCliente + ", fkTransportadora=" + fkTransportadora + ", acessoSistemas="
+				+ acessoSistemas + ", valorFrete=" + valorFrete + ", valorSeguro=" + valorSeguro + ", valorOutros="
+				+ valorOutros + ", valorDesconto=" + valorDesconto + ", valorProduto=" + valorProduto + ", lstItens="
+				+ lstItens + ", cpf=" + cpf + ", dataRegistroDI=" + dataRegistroDI + ", localDesembaraco="
+				+ localDesembaraco + ", dataDesembaraco=" + dataDesembaraco + ", ufDesembaraco=" + ufDesembaraco
+				+ ", valorAfrmm=" + valorAfrmm + ", viaTransporteInternacional=" + viaTransporteInternacional
+				+ ", formaImportacaoIntermediacao=" + formaImportacaoIntermediacao + ", cnpjAdquirente="
+				+ cnpjAdquirente + ", ufTerceiro=" + ufTerceiro + "]";
 	}
 }
