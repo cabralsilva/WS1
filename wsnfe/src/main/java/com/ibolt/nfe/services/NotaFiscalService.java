@@ -30,7 +30,7 @@ public class NotaFiscalService extends ControlService {
 					+ "Cliente.Logradouro AS LogradouroC, Cliente.Numero AS NumeroC, Cliente.Bairro AS BairroC, \n "
 					+ "Cliente.Municipio AS MunicipioC, Cliente.MunicipioCodigo AS MunicipioCodigoC, Cliente.Uf AS UfC, \n "
 					+ "Cliente.UfCodigo AS UfCodigoC, Cliente.IdEstrangeiro AS IdEstrangeiroC, \n "
-					+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, \n\n "
+					+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, Cliente.Pais AS PaisC, \n\n "
 					+ "Fornecedor.Codigo AS CodigoT, Fornecedor.Pessoa AS PessoaT, Fornecedor.Cnpj AS CnpjT, \n "
 					+ "Fornecedor.Cpf AS CpfT, Fornecedor.RazaoSocial  AS RazaoSocialT, Fornecedor.Nome  AS NomeT, \n "
 					+ "Fornecedor.Logradouro  AS LogradouroT, Fornecedor.InscricaoEstadual AS InscricaoEstadualT, \n "
@@ -60,7 +60,7 @@ public class NotaFiscalService extends ControlService {
 							+ "Cliente.Logradouro AS LogradouroC, Cliente.Numero AS NumeroC, Cliente.Bairro AS BairroC, \n "
 							+ "Cliente.Municipio AS MunicipioC, Cliente.MunicipioCodigo AS MunicipioCodigoC, Cliente.Uf AS UfC, \n "
 							+ "Cliente.UfCodigo AS UfCodigoC, Cliente.IdEstrangeiro AS IdEstrangeiroC, \n "
-							+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, \n\n "
+							+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, Cliente.Pais AS PaisC, \n\n "
 							+ "Transportador.Codigo AS CodigoT, Transportador.Pessoa AS PessoaT, Transportador.Cnpj AS CnpjT, \n "
 							+ "Transportador.Cpf AS CpfT, Transportador.RazaoSocial  AS RazaoSocialT, Transportador.Nome  AS NomeT, \n "
 							+ "Transportador.Logradouro  AS LogradouroT, Transportador.InscricaoEstadual AS InscricaoEstadualT, \n "
@@ -86,7 +86,7 @@ public class NotaFiscalService extends ControlService {
 							+ "Cliente.Logradouro AS LogradouroC, Cliente.Numero AS NumeroC, Cliente.Bairro AS BairroC, \n "
 							+ "Cliente.Municipio AS MunicipioC, Cliente.MunicipioCodigo AS MunicipioCodigoC, Cliente.Uf AS UfC, \n "
 							+ "Cliente.UfCodigo AS UfCodigoC, Cliente.IdEstrangeiro AS IdEstrangeiroC, \n "
-							+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, \n\n "
+							+ "Cliente.IdentificadorInscricaoEstadual AS IdentificadorInscricaoEstadualC, Cliente.PaisCodigo AS PaisCodigoC, Cliente.Pais AS PaisC, \n\n "
 							+ "Transportador.Codigo AS CodigoT, Transportador.Pessoa AS PessoaT, Transportador.Cnpj AS CnpjT, \n "
 							+ "Transportador.Cpf AS CpfT, Transportador.RazaoSocial  AS RazaoSocialT, Transportador.Nome  AS NomeT, \n "
 							+ "Transportador.Logradouro  AS LogradouroT, Transportador.InscricaoEstadual AS InscricaoEstadualT, \n "
@@ -141,6 +141,7 @@ public class NotaFiscalService extends ControlService {
 				nf.getFkCliente().setIdEstrangeiro(Long.valueOf(rs.getLong("IdEstrangeiroC")));
 				nf.getFkCliente().setIdentificadorInscricaoEstadual(rs.getString("IdentificadorInscricaoEstadualC"));
 				nf.getFkCliente().setPaisCodigo(rs.getString("PaisCodigoC"));
+				nf.getFkCliente().setPais(rs.getString("PaisC"));
 				int limite = nf.getFkCliente().getCpf() != null && nf.getFkCliente().getCpf() != ""
 						? nf.getFkCliente().getCpf().length() : nf.getFkCliente().getCnpj().length();
 				int i = inicio = nf.getFkCliente().getCpf() != null && nf.getFkCliente().getCpf() != "" ? 11 : 14;
