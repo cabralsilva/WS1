@@ -81,12 +81,12 @@ public class ItemNotaFiscalService extends ControlService {
 			inf.getFkProdutoGrade().setReferencia(rs.getString("ReferenciaPG"));
 			inf.getFkProdutoGrade().setModelo(rs.getString("ModeloPG"));
 			inf.getFkProdutoGrade().setDescricaoGrade(rs.getString("DescricaoGradePG"));
+			
 			inf.getFkProdutoGrade().getFkProduto().setCodigo(Long.valueOf(rs.getLong("CodigoP")));
 			inf.getFkProdutoGrade().getFkProduto().setDescricao(rs.getString("DescricaoP"));
 			inf.getFkProdutoGrade().getFkProduto().setUnidadeComercial(rs.getString("UnidadeComercialP"));
 			inf.getFkProdutoGrade().getFkProduto().setValorSaida(Double.valueOf(rs.getDouble("ValorSaidaP")));
-			inf.getFkProdutoGrade().getFkProduto()
-					.setValorSaidaPromocao(Double.valueOf(rs.getDouble("ValorSaidaPromocaoP")));
+			inf.getFkProdutoGrade().getFkProduto().setValorSaidaPromocao(Double.valueOf(rs.getDouble("ValorSaidaPromocaoP")));
 			inf.getFkProdutoGrade().getFkProduto().setPesoBruto(Double.valueOf(rs.getDouble("PesoBrutoP")));
 			inf.getFkProdutoGrade().getFkProduto().setPesoLiquido(Double.valueOf(rs.getDouble("PesoLiquidoP")));
 			inf.getFkProdutoGrade().getFkProduto().setComprimento(Double.valueOf(rs.getDouble("ComprimentoP")));
@@ -95,10 +95,8 @@ public class ItemNotaFiscalService extends ControlService {
 			inf.getFkProdutoGrade().getFkProduto().setNcm(Long.valueOf(rs.getLong("NcmP")));
 			inf.getFkProdutoGrade().getFkProduto().setCfopSaidaEstadual(Long.valueOf(rs.getLong("CfopSaidaInternoP")));
 			inf.getFkProdutoGrade().getFkProduto().setCfopSaidaNacional(Long.valueOf(rs.getLong("CfopSaidaExternoP")));
-			inf.getFkProdutoGrade().getFkProduto()
-					.setCfopEntradaEstadual(Long.valueOf(rs.getLong("CfopEntradaInternoP")));
-			inf.getFkProdutoGrade().getFkProduto()
-					.setCfopEntradaNacional(Long.valueOf(rs.getLong("CfopEntradaExternoP")));
+			inf.getFkProdutoGrade().getFkProduto().setCfopEntradaEstadual(Long.valueOf(rs.getLong("CfopEntradaInternoP")));
+			inf.getFkProdutoGrade().getFkProduto().setCfopEntradaNacional(Long.valueOf(rs.getLong("CfopEntradaExternoP")));
 			inf.getFkProdutoGrade().getFkProduto().setOrigemTributaria(Long.valueOf(rs.getLong("OrigemTributariaP")));
 			inf.getFkProdutoGrade().getFkProduto().setAliquotaPis(Long.valueOf(rs.getLong("AliquotaPisP")));
 			inf.getFkProdutoGrade().getFkProduto().setAliquotaCofins(Long.valueOf(rs.getLong("AliquotaCofinsP")));
@@ -111,6 +109,7 @@ public class ItemNotaFiscalService extends ControlService {
 			inf.getFkProdutoGrade().getFkProduto().setCstCsosn(Long.valueOf(rs.getLong("CstCsosnP")));
 			inf.getFkProdutoGrade().getFkProduto().setModalidadeIcms(Long.valueOf(rs.getLong("ModalidadeIcmsP")));
 			inf.getFkProdutoGrade().getFkProduto().setModalidadeIcmsSt(Long.valueOf(rs.getLong("ModalidadeIcmsStP")));
+			
 			inf.setCodigo(Long.valueOf(rs.getLong("Codigo")));
 			inf.setValor(Double.valueOf(rs.getDouble("Valor")));
 			inf.setValorUnitario(Double.valueOf(rs.getDouble("ValorUnitario")));
