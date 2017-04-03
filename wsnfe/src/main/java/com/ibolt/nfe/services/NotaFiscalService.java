@@ -143,6 +143,7 @@ public class NotaFiscalService extends ControlService {
 				nf.setFkTransportadora(new Transportadora());
 				nf.getFkTransportadora().setCodigo(Long.valueOf(rs.getLong("CodigoT")));
 				nf.getFkTransportadora().setPessoa(rs.getString("PessoaT"));
+				nf.getFkTransportadora().setNome(rs.getString("NomeT"));
 				nf.getFkTransportadora().setCnpj(rs.getString("CnpjT"));
 				nf.getFkTransportadora().setCpf(rs.getString("CpfT"));
 				nf.getFkTransportadora().setRazaoSocial(rs.getString("RazaoSocialT"));
